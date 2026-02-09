@@ -27,6 +27,17 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			return;
 		}
 
+		// Sol·licitar lletra pel notch
+		char posclau;
+		std::cout << "Introdueix una lletra com a posicio de clau: ";
+		std::cin >> posclau;
+
+		// Si el resultat es incorrecte per default agafa Z
+		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
+			posclau = 'Z';
+		}
+		posclau = toupper(posclau);
+
 		//Edicio del archiu
 		std::ofstream edicioRotor1;
 		edicioRotor1.open("Rotor1.txt");
@@ -38,7 +49,7 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			std::exit(1);
 		}
 
-		edicioRotor1 << rotor1 << std::endl << notchRotor1;
+		edicioRotor1 << rotor1 << std::endl << posclau;
 		edicioRotor1.close();
 	}
 
@@ -54,6 +65,17 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			return;
 		}
 
+		// Sol·licitar lletra pel notch
+		char posclau;
+		std::cout << "Introdueix una lletra com a posicio de clau: ";
+		std::cin >> posclau;
+
+		// Si el resultat es incorrecte per default agafa Z
+		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
+			posclau = 'Z';
+		}
+		posclau = toupper(posclau);
+
 		//Edicio del archiu
 		std::ofstream edicioRotor2;
 		edicioRotor2.open("Rotor2.txt");
@@ -64,7 +86,7 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			std::cout << "No s'ha pogut obrir el fitxer Rotor2.txt";
 			std::exit(1);
 		}
-		edicioRotor2 << rotor2 << std::endl << notchRotor2;
+		edicioRotor2 << rotor2 << std::endl << posclau;
 		edicioRotor2.close();
 	}
 
@@ -80,6 +102,17 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			return;
 		}
 
+		// Sol·licitar lletra pel notch
+		char posclau;
+		std::cout << "Introdueix una lletra com a posicio de clau: ";
+		std::cin >> posclau;
+
+		// Si el resultat es incorrecte per default agafa Z
+		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
+			posclau = 'Z';
+		}
+		posclau = toupper(posclau);
+
 		//Edició archiu
 		std::fstream edicioRotor3;
 		edicioRotor3.open("Rotor3.txt");
@@ -90,7 +123,7 @@ void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, st
 			std::cout << "No s'ha pogut obrir el fitxer Rotor3.txt";
 			std::exit(1);
 		}
-		edicioRotor3 << rotor3 << std::endl << notchRotor3;
+		edicioRotor3 << rotor3 << std::endl << posclau;
 		edicioRotor3.close();
 	}
 
