@@ -15,7 +15,7 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 
 	for (int i = minAbecedari; i < mensaje.length(); i++)
 	{
-		// Comprovar notch del primer rotor abans d'avançar
+		// Comprovar notch del primer rotor abans d'avanÃ§ar
 		if (rot1[0] == notchRot1[0])
 		{
 			girarRotor2 = true;
@@ -30,20 +30,20 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 			mensaje[i] = rot3[mensaje[i] - iniciAbecedariMax];
 		}
 
-		// Avançar primer rotor (sempre)
+		// AvanÃ§ar primer rotor (sempre)
 		rot1 += rot1[minAbecedari];
 		rot1.erase(minAbecedari, 1);
 
-		// Avançar segon rotor si cal
+		// AvanÃ§ar segon rotor si cal
 		if (girarRotor2)
 		{
-			// Comprovar notch del segon rotor abans d'avançar
+			// Comprovar notch del segon rotor abans d'avanÃ§ar
 			if (rot2[0] == notchRot2[0])
 			{
 				girarRotor3 = true;
 			}
 
-			// Avançar segon rotor
+			// AvanÃ§ar segon rotor
 			rot2 += rot2[minAbecedari];
 			rot2.erase(minAbecedari, 1);
 
@@ -51,7 +51,7 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 			girarRotor2 = false;
 		}
 
-		// Avançar tercer rotor si cal
+		// AvanÃ§ar tercer rotor si cal
 		if (girarRotor3)
 		{
 			rot3 += rot3[minAbecedari];
@@ -76,6 +76,9 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 
 void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::string notchRot1, bool notchRot1Found, std::string rot2, std::string notchRot2, bool notchRot2Found, std::string rot3, std::string notchRot3) {
 
+	//Nombro la funcio per posicionar els rotors amb el notch desitjat
+	definirPosicionsInicials(rot1, rot2, rot3);
+	
 	std::string inv_rot1(maxAbecedari, SPACE);
 	std::string inv_rot2(maxAbecedari, SPACE);
 	std::string inv_rot3(maxAbecedari, SPACE);
@@ -106,7 +109,7 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 
 	for (int i = minAbecedari; i < mensajeEncriptado.length(); i++)
 	{
-		// Comprovar notch del primer rotor abans d'avançar
+		// Comprovar notch del primer rotor abans d'avanÃ§ar
 		if (rot1[0] == notchRot1[0])
 		{
 			girarRotor2 = true;
@@ -121,7 +124,7 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 			mensajeEncriptado[i] = inv_rot1[mensajeEncriptado[i] - iniciAbecedariMax];
 		}
 
-		// Avançar primer rotor
+		// AvanÃ§ar primer rotor
 		rot1 += rot1[minAbecedari];
 		rot1.erase(minAbecedari, 1);
 
@@ -130,7 +133,7 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 			inv_rot1[rot1[j] - iniciAbecedariMax] = iniciAbecedariMax + j;
 		}
 
-		// Avançar segon rotor si cal
+		// AvanÃ§ar segon rotor si cal
 		if (girarRotor2)
 		{
 			// Comprovar notch del segon
@@ -139,7 +142,7 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 				girarRotor3 = true;
 			}
 
-			// Avançar segon rotor
+			// AvanÃ§ar segon rotor
 			rot2 += rot2[minAbecedari];
 			rot2.erase(minAbecedari, 1);
 
@@ -151,7 +154,7 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 			girarRotor2 = false;
 		}
 
-		// Avançar tercer rotor si cal
+		// AvanÃ§ar tercer rotor si cal
 		if (girarRotor3)
 		{
 			rot3 += rot3[minAbecedari];
@@ -177,3 +180,4 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 	mensajeDescifrado << mensajeEncriptado;
 	mensajeDescifrado.close();
 }
+
