@@ -1,8 +1,8 @@
 #include "const.h"
 #include "utils.h"
-#include "PreXifrat.h"
-#include "Xifrat.h"
-#include "PostXifrat.h"
+#include "prexifrat.h"
+#include "xifrat.h"
+#include "postxifrat.h"
 #include <iostream>
 #include <fstream>
 

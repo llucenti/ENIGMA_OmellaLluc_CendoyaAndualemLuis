@@ -142,10 +142,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="const.h" />
-    <ClInclude Include="PostXifrat.h" />
-    <ClInclude Include="PreXifrat.h" />
+    <ClInclude Include="postXifrat.h" />
+    <ClInclude Include="preXifrat.h" />
     <ClInclude Include="utils.h" />
-    <ClInclude Include="Xifrat.h" />
+    <ClInclude Include="xifrat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

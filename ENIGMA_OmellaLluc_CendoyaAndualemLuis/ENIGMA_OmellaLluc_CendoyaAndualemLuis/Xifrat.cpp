@@ -3,17 +3,17 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "PreXifrat.h"
-#include "Xifrat.h"
-#include "PostXifrat.h"
+#include "prexifrat.h"
+#include "xifrat.h"
+#include "postxifrat.h"
 
 
-void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, std::string& rot3, std::string notchRot1, std::string notchRot2, std::string notchRot3, bool& notchRot1Found, bool& notchRot2Found) {
+void xifrarMissatge(std::string& text, std::string& rot1, std::string& rot2, std::string& rot3, std::string notchRot1, std::string notchRot2, std::string notchRot3, bool& notchRot1Trobat, bool& notchRot2Trobat) {
 	// Variables per controlar el gir
 	bool girarRotor2 = false;
 	bool girarRotor3 = false;
 
-	for (int i = minAbecedari; i < mensaje.length(); i++)
+	for (int i = minAbecedari; i < text.length(); i++)
 	{
 		// Comprovar notch del primer rotor abans d'avançar
 		if (rot1[0] == notchRot1[0])
@@ -21,13 +21,13 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 			girarRotor2 = true;
 		}
 
-		if (mensaje[i] != espai)
+		if (text[i] != espai)
 		{
-			mensaje[i] = rot1[mensaje[i] - iniciAbecedariMax];
+			text[i] = rot1[text[i] - iniciAbecedariMax];
 
-			mensaje[i] = rot2[mensaje[i] - iniciAbecedariMax];
+			text[i] = rot2[text[i] - iniciAbecedariMax];
 
-			mensaje[i] = rot3[mensaje[i] - iniciAbecedariMax];
+			text[i] = rot3[text[i] - iniciAbecedariMax];
 		}
 
 		// Avançar primer rotor (sempre)
@@ -62,19 +62,19 @@ void XifrarMissatge(std::string& mensaje, std::string& rot1, std::string& rot2, 
 		}
 	}
 
-	std::ofstream mensajeCifrado;
-	mensajeCifrado.open("Xifrat.txt");
+	std::ofstream fitxerXifrat;
+	fitxerXifrat.open("Xifrat.txt");
 
-	if (!mensajeCifrado.is_open())
+	if (!fitxerXifrat.is_open())
 	{
 		std::cout << "No s'ha pogut obrir el fitxer Xifrat.txt";
 		std::exit(1);
 	}
-	mensajeCifrado << mensaje;
-	mensajeCifrado.close();
+	fitxerXifrat << text;
+	fitxerXifrat.close();
 }
 
-void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::string notchRot1, bool notchRot1Found, std::string rot2, std::string notchRot2, bool notchRot2Found, std::string rot3, std::string notchRot3) {
+void desxifrarMissatge(std::string textXifrat, std::string rot1, std::string notchRot1, bool notchRot1Trobat, std::string rot2, std::string notchRot2, bool notchRot2Trobat, std::string rot3, std::string notchRot3) {
 
 	//Nombro la funcio per posicionar els rotors amb el notch desitjat
 	definirPosicionsInicials(rot1, rot2, rot3);
@@ -89,25 +89,25 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 		inv_rot3[rot3[i] - iniciAbecedariMax] = iniciAbecedariMax + i;
 	}
 
-	std::fstream mensajeCifrado;
-	mensajeCifrado.open("Xifrat.txt");
+	std::fstream fitxerXifrat;
+	fitxerXifrat.open("Xifrat.txt");
 
-	if (!mensajeCifrado.is_open())
+	if (!fitxerXifrat.is_open())
 	{
 		std::cout << "No s'ha pogut obrir el fitxer Xifrat.txt";
 		std::exit(1);
 	}
 	std::string linea;
-	while (std::getline(mensajeCifrado, linea)) {
-		mensajeEncriptado += linea;
+	while (std::getline(fitxerXifrat, linea)) {
+		textXifrat += linea;
 	}
-	mensajeCifrado.close();
+	fitxerXifrat.close();
 
 	// Variables per controlar el gir
 	bool girarRotor2 = false;
 	bool girarRotor3 = false;
 
-	for (int i = minAbecedari; i < mensajeEncriptado.length(); i++)
+	for (int i = minAbecedari; i < textXifrat.length(); i++)
 	{
 		// Comprovar notch del primer rotor abans d'avançar
 		if (rot1[0] == notchRot1[0])
@@ -115,13 +115,13 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 			girarRotor2 = true;
 		}
 
-		if (mensajeEncriptado[i] != espai)
+		if (textXifrat[i] != espai)
 		{
-			mensajeEncriptado[i] = inv_rot3[mensajeEncriptado[i] - iniciAbecedariMax];
+			textXifrat[i] = inv_rot3[textXifrat[i] - iniciAbecedariMax];
 
-			mensajeEncriptado[i] = inv_rot2[mensajeEncriptado[i] - iniciAbecedariMax];
+			textXifrat[i] = inv_rot2[textXifrat[i] - iniciAbecedariMax];
 
-			mensajeEncriptado[i] = inv_rot1[mensajeEncriptado[i] - iniciAbecedariMax];
+			textXifrat[i] = inv_rot1[textXifrat[i] - iniciAbecedariMax];
 		}
 
 		// Avançar primer rotor
@@ -169,15 +169,15 @@ void desxifrarMissatge(std::string mensajeEncriptado, std::string rot1, std::str
 		}
 	}
 
-	std::ofstream mensajeDescifrado;
-	mensajeDescifrado.open("Desxifrat.txt");
+	std::ofstream fitxerDesxifrat;
+	fitxerDesxifrat.open("Desxifrat.txt");
 
-	if (!mensajeDescifrado.is_open())
+	if (!fitxerDesxifrat.is_open())
 	{
 		std::cout << "No s'ha pogut obrir el fitxer Xifrat.txt";
 		std::exit(1);
 	}
-	mensajeDescifrado << mensajeEncriptado;
-	mensajeDescifrado.close();
+	fitxerDesxifrat << textXifrat;
+	fitxerDesxifrat.close();
 }
 

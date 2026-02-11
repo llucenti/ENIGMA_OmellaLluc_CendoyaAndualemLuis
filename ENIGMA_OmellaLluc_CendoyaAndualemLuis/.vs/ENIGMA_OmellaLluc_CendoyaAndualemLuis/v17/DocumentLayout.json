@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\",
+  "WorkspaceRootPath": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.h||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.h||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E986F5D2-4D48-4570-9C55-1DCC61C3D647}|ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis.vcxproj|solutionrelative:ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +34,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "xifrat.h",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\xifrat.h",
+              "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\xifrat.h",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\xifrat.h",
+              "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\xifrat.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-11T19:00:46.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PostXifrat.cpp",
-              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
               "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
-              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
               "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PostXifrat.cpp",
               "ViewState": "AgIAADEAAAAAAAAAAAASwDkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -47,52 +64,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Xifrat.cpp",
-              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
               "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
-              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
               "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\Xifrat.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-09T10:32:33.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "const.h",
-              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
               "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
-              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
               "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\const.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAASwAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-09T10:28:44.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T10:28:44.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PreXifrat.h",
-              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h",
-              "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h",
-              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h",
-              "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAD0AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "preXifrat.h",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\preXifrat.h",
+              "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\preXifrat.h",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\preXifrat.h",
+              "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\preXifrat.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAADhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-09T09:59:19.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PreXifrat.cpp",
-              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
+              "DocumentMoniker": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
               "RelativeDocumentMoniker": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
-              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\ENIGMA 2026\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
+              "ToolTip": "C:\\Users\\socia\\Documents\\GitHub\\enigma_def\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
               "RelativeToolTip": "ENIGMA_OmellaLluc_CendoyaAndualemLuis\\PreXifrat.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-08T19:22:26.902Z",
               "EditorCaption": ""

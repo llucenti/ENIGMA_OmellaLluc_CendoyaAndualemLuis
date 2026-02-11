@@ -2,9 +2,9 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "PreXifrat.h"
-#include "Xifrat.h"
-#include "PostXifrat.h"
+#include "prexifrat.h"
+#include "xifrat.h"
+#include "postxifrat.h"
 
 void comprobacions(char& caracterMissatge) {
 	

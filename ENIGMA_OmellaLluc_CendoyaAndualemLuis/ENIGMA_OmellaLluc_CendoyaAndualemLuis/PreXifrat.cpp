@@ -2,9 +2,9 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "PreXifrat.h"
-#include "Xifrat.h"
-#include "PostXifrat.h"
+#include "prexifrat.h"
+#include "xifrat.h"
+#include "postxifrat.h"
 
 void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, std::string notchRotor1, std::string notchRotor2, std::string notchRotor3) {
 	std::string rotors[3];
@@ -172,7 +172,7 @@ void menuPrincipal(short opcio, std::string missatge, std::string rot1, std::str
 		missatgeOG.close();
 
 		separacio(missatge);
-		XifrarMissatge(missatge, rot1, rot2, rot3, notchRot1, notchRot2, notchRot3, notchRot1Trobat, notchRot2Trobat);
+		xifrarMissatge(missatge, rot1, rot2, rot3, notchRot1, notchRot2, notchRot3, notchRot1Trobat, notchRot2Trobat);
 		std::cout << "[OK] Missatge xifrat a 'Xifrat.txt'" << std::endl;
 	}
 	break;

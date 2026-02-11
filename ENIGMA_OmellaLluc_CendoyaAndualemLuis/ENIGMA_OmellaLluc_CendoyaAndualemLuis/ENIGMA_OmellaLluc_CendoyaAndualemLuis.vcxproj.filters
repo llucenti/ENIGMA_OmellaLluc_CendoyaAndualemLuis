@@ -49,13 +49,13 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Xifrat.h">
+    <ClInclude Include="xifrat.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="PreXifrat.h">
+    <ClInclude Include="preXifrat.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="PostXifrat.h">
+    <ClInclude Include="postXifrat.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
