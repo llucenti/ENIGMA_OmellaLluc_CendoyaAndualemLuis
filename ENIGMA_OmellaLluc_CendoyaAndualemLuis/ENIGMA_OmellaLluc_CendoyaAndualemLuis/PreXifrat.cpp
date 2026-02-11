@@ -7,132 +7,64 @@
 #include "PostXifrat.h"
 
 void editarRotors(std::string rotor1, std::string rotor2, std::string rotor3, std::string notchRotor1, std::string notchRotor2, std::string notchRotor3) {
-
-	//Escollir quin rotor volem editar
+	std::string rotors[3];
+	int notchs[3];
 	short opcioRotors;
 	std::cout << "Quin rotor vols editar (1 - 3): ";
 	std::cin >> opcioRotors;
-	std::cin.get();
 
-	//Les diferentes opcions segons rotor
-	if (opcioRotors == quantitatPrincipal)
+	if (opcioRotors < 1 || opcioRotors > 3)
 	{
-		std::cout << "Introdueix una permutacio valida per al Rotor 1: ";
-		std::cin >> rotor1;
-
-		//Comprovacio de llargada de rotors
-		if (rotor1.length() != maxAbecedari)
-		{
-			std::cout << "[ERROR] Rotor1: Permutacio introduida no valida.";
-			return;
-		}
-
-		// Sol·licitar lletra pel notch
-		char posclau;
-		std::cout << "Introdueix una lletra com a posicio de clau: ";
-		std::cin >> posclau;
-
-		// Si el resultat es incorrecte per default agafa Z
-		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
-			posclau = 'Z';
-		}
-		posclau = toupper(posclau);
-
-		//Edicio del archiu
-		std::ofstream edicioRotor1;
-		edicioRotor1.open("Rotor1.txt");
-
-		//Comprovació errors, si esta obert
-		if (!edicioRotor1.is_open())
-		{
-			std::cout << "No s'ha pogut obrir el fitxer Rotor1.txt";
-			std::exit(1);
-		}
-
-		edicioRotor1 << rotor1 << std::endl << posclau;
-		edicioRotor1.close();
-	}
-
-	else if (opcioRotors == 2)
-	{
-		std::cout << "Introdueix una permutacio valida per al Rotor 2: ";
-		std::cin >> rotor2;
-
-		//Comprovacio de llargada de rotors
-		if (rotor2.length() != maxAbecedari)
-		{
-			std::cout << "[ERROR] Rotor2: Permutacio introduida no valida.";
-			return;
-		}
-
-		// Sol·licitar lletra pel notch
-		char posclau;
-		std::cout << "Introdueix una lletra com a posicio de clau: ";
-		std::cin >> posclau;
-
-		// Si el resultat es incorrecte per default agafa Z
-		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
-			posclau = 'Z';
-		}
-		posclau = toupper(posclau);
-
-		//Edicio del archiu
-		std::ofstream edicioRotor2;
-		edicioRotor2.open("Rotor2.txt");
-
-		//Comprovació errors, si esta obert
-		if (!edicioRotor2.is_open())
-		{
-			std::cout << "No s'ha pogut obrir el fitxer Rotor2.txt";
-			std::exit(1);
-		}
-		edicioRotor2 << rotor2 << std::endl << posclau;
-		edicioRotor2.close();
-	}
-
-	else if (opcioRotors == 3)
-	{
-		std::cout << "Introdueix una permutacio valida per al Rotor 3: ";
-		std::cin >> rotor3;
-
-		//Comprovacio de llargada de rotors
-		if (rotor3.length() != maxAbecedari)
-		{
-			std::cout << "[ERROR] Rotor3: Permutacio introduida no valida.";
-			return;
-		}
-
-		// Sol·licitar lletra pel notch
-		char posclau;
-		std::cout << "Introdueix una lletra com a posicio de clau: ";
-		std::cin >> posclau;
-
-		// Si el resultat es incorrecte per default agafa Z
-		if ((posclau < 'A' || posclau > 'Z') && (posclau < 'a' || posclau > 'z')) {
-			posclau = 'Z';
-		}
-		posclau = toupper(posclau);
-
-		//Edició archiu
-		std::fstream edicioRotor3;
-		edicioRotor3.open("Rotor3.txt");
-
-		//Comprovació errors, si esta obert
-		if (!edicioRotor3.is_open())
-		{
-			std::cout << "No s'ha pogut obrir el fitxer Rotor3.txt";
-			std::exit(1);
-		}
-		edicioRotor3 << rotor3 << std::endl << posclau;
-		edicioRotor3.close();
-	}
-
-	//Si no es cap dels 3 dona error
-	else
-	{
-		std::cout << "Opcio invalida" << std::endl;
+		std::cout << "Opcio no valida";
 		return;
 	}
+
+	int rotorEscollit = opcioRotors - 1;
+	std::cout << "Introdueix una permutacio valida per al Rotor " << opcioRotors << ": ";
+	std::cin >> rotors[rotorEscollit];
+
+	//Comprovacio de llargada de rotors
+	if (rotors[rotorEscollit].length() != maxAbecedari)
+	{
+		std::cout << "[ERROR] Rotor" << opcioRotors << ": Permutacio introduida no valida.";
+		return;
+	}
+
+	// SolÂ·licitar lletra pel notch
+	char posNotch;
+	std::cout << "Introdueix una lletra com a posicio de clau: ";
+	std::cin >> posNotch;
+
+	// Si el resultat es incorrecte per default agafa Z
+	if ((posNotch < 'A' || posNotch > 'Z') && (posNotch < 'a' || posNotch > 'z')) {
+		posNotch = 'Z';
+	}
+	posNotch = toupper(posNotch);
+
+	//Edicio del arxiu
+	std::ofstream edicioRotor;
+	if (opcioRotors == 1)
+	{
+		edicioRotor.open("Rotor1.txt");
+	}
+	else if (opcioRotors == 2)
+	{
+		edicioRotor.open("Rotor2.txt");
+	}
+	else // opcioRotors == 3
+	{
+		edicioRotor.open("Rotor3.txt");
+	}
+
+	//ComprovaciÃ³ errors, si esta obert
+	if (!edicioRotor.is_open())
+	{
+		std::cout << "No s'ha pogut obrir el fitxer txt";
+		std::exit(1);
+	}
+
+	edicioRotor << rotors[rotorEscollit] << std::endl << posNotch;
+	edicioRotor.close();
 }
 
 //Falta comentar be
@@ -254,3 +186,4 @@ void menuPrincipal(short opcio, std::string missatge, std::string rot1, std::str
 		break;
 	}
 }
+
