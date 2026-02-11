@@ -152,11 +152,17 @@ void menuPrincipal(short opcio, std::string missatge, std::string rot1, std::str
 	{
 	case 1:
 	{
+		// Crido funcio per definir les posicions inicials
+		definirPosicionsInicials(rot1, rot2, rot3);
+
+		//Amb aixo netejo el buffer i evito errors de que es posi un missatge per error, realment no es un missatge seria un salt de linea
+		std::cin.ignore();
+		
 		std::cout << std::endl << "Introdueix el missatge: ";
 		std::getline(std::cin, missatge);
+
 		std::ofstream missatgeOG;
 		missatgeOG.open("Missatge.txt");
-
 		if (!missatgeOG.is_open())
 		{
 			std::cout << "No s'ha pogut obrir el fitxer Missatge.txt";
@@ -166,7 +172,6 @@ void menuPrincipal(short opcio, std::string missatge, std::string rot1, std::str
 		missatgeOG.close();
 
 		separacio(missatge);
-
 		XifrarMissatge(missatge, rot1, rot2, rot3, notchRot1, notchRot2, notchRot3, notchRot1Trobat, notchRot2Trobat);
 		std::cout << "[OK] Missatge xifrat a 'Xifrat.txt'" << std::endl;
 	}
@@ -187,3 +192,43 @@ void menuPrincipal(short opcio, std::string missatge, std::string rot1, std::str
 	}
 }
 
+void definirPosicionsInicials(std::string& rot1, std::string& rot2, std::string& rot3) {
+	// Demanar les posicions inicials per als 3 rotors
+	char posicioInicial1, posicioInicial2, posicioInicial3;
+
+	std::cout << "Introdueix la posicio inicial del Rotor 1 (A-Z): ";
+	std::cin >> posicioInicial1;
+	posicioInicial1 = toupper(posicioInicial1);
+
+	std::cout << "Introdueix la posicio inicial del Rotor 2 (A-Z): ";
+	std::cin >> posicioInicial2;
+	posicioInicial2 = toupper(posicioInicial2);
+
+	std::cout << "Introdueix la posicio inicial del Rotor 3 (A-Z): ";
+	std::cin >> posicioInicial3;
+	posicioInicial3 = toupper(posicioInicial3);
+
+	// Rotar Rotor 1
+	int posicio1 = rot1.find(posicioInicial1);
+	if (posicio1 == std::string::npos) {
+		std::cout << "[ERROR] La lletra no existeix en el Rotor 1." << std::endl;
+		return;
+	}
+	rot1 = rot1.substr(posicio1) + rot1.substr(0, posicio1);
+
+	// Rotar Rotor 2
+	int posicio2 = rot2.find(posicioInicial2);
+	if (posicio2 == std::string::npos) {
+		std::cout << "[ERROR] La lletra no existeix en el Rotor 2." << std::endl;
+		return;
+	}
+	rot2 = rot2.substr(posicio2) + rot2.substr(0, posicio2);
+
+	// Rotar Rotor 3
+	int posicio3 = rot3.find(posicioInicial3);
+	if (posicio3 == std::string::npos) {
+		std::cout << "[ERROR] La lletra no existeix en el Rotor 3." << std::endl;
+		return;
+	}
+	rot3 = rot3.substr(posicio3) + rot3.substr(0, posicio3);
+}
