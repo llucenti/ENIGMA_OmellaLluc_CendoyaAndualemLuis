@@ -147,7 +147,7 @@ Es l'arxiu que, tal i com diu el seu nom conté el missatge *xifrat*: es a dir n
 ```
 En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge -ja desxifrat-, es presnta d'una forma concreta:
 
-- Totes les lletres foren majuscules o minuscules, apsen a ser majuscules.
+- Totes les lletres foren majuscules o minuscules, pasen a ser majuscules.
 
 - Els espais son ignorats
 
