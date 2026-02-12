@@ -37,7 +37,7 @@ Farem una prova xifrant un missatge. Per fer-ho més senzill, utilitzarem el not
 El menú del programa és aquest i ofereix diverses opcions:
 
 <p align="center">
-  <img src="/menucodi.png" alt="Menú del programa" width="500"/>
+  <img src="/menu.png" alt="Menú del programa" width="500"/>
 </p>
 
 [▲ Tornar a l'índex](#índex).
