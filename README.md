@@ -95,17 +95,21 @@ Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com
 
 ```text
 ├── Arxius/
-    ├── const.h
-    ├── logica.h
-    ├── Desxifrat.txt
+    ├── DesXifrat.txt
+    ├── Missatge.txt
+    ├── PostXifrat.cpp
+    ├── PostXifrat.h
+    ├── PreXifrat.cpp
+    ├── PreXifrat.h
     ├── Rotor1.txt
     ├── Rotor2.txt
     ├── Rotor3.txt
+    ├── Xifrat.cpp
+    ├── Xifrat.h
     ├── Xifrat.txt
+    ├── const.h
     ├── main.cpp
-    ├── rotors.cpp
-    ├── variables.cpp
-    └── operations.cpp
+    └── utils.h
 ```
 [▲ Tornar a l'índex](#índex).
 
