@@ -18,7 +18,7 @@
 
 ## 🔑 Punts claus del codi <a name="claus"></a>
 
-El codi presenta una simulació de la màquina enigma. Per una banda tenim els **rotors**, que consisteixen en tres arxius `.txt` amb l’abecedari en ordres diferents. La idea és que no segueixin un ordre clàssic per dificultar el procés d’encriptació a qui no disposi de la clau (`notch`).
+El codi presenta una simulació de la màquina enigma. Per una banda tenim els **rotors**, que consisteixen en tres arxius `.txt` amb l’abecedari en ordres diferents. La idea és que no segueixin un ordre clàssic per dificultar el procés de xifratge a qui no disposi de la clau (`notch`).
 
 Parlant de **notch**, és la **clau inicial**, composta per 3 lletres. El programa utilitza aquesta clau per establir la posició inicial dels rotors.
 
@@ -32,7 +32,7 @@ Parlant de **notch**, és la **clau inicial**, composta per 3 lletres. El progra
 
 ## 🧪 Pràctica amb un exemple <a name="exemple"></a>
 
-Farem una prova encriptant un missatge. Per fer-ho més senzill, utilitzarem el notch `"GAT"`.
+Farem una prova xifrant un missatge. Per fer-ho més senzill, utilitzarem el notch `"GAT"`.
 
 El menú del programa és aquest i ofereix diverses opcions:
 
@@ -46,7 +46,7 @@ El menú del programa és aquest i ofereix diverses opcions:
 
 ### 1️⃣ Xifrar missatge <a name="xifrar"></a>
 
-Aquesta opció encripta el missatge que introduïm per terminal. El contingut es xifra utilitzant la lògica dels tres rotors. Cada rotor és un `.txt` amb l’abecedari desordenat. El codi assigna una posició inicial a cada rotor segons el notch.
+Aquesta opció xifra el missatge que introduïm per terminal. El contingut es xifra utilitzant la lògica dels tres rotors. Cada rotor és un `.txt` amb l’abecedari desordenat. El codi assigna una posició inicial a cada rotor segons el notch.
 
 <p align="center">
   <img src="/encriptarfoto.png" alt="Xifrant el missatge" width="500"/>
@@ -57,7 +57,7 @@ Per exemple, si la posició inicial dels rotors és `"GAT"`, el programa fa un b
 A R T H U P G L
 
 
-El programa anirà saltant lletres fins a trobar la indicada. Quan els tres rotors estan a lloc, el missatge s’encripta.
+El programa anirà saltant lletres fins a trobar la indicada. Quan els tres rotors estan a lloc, el missatge es xifra.
 
 <p align="center">
   <img src="/rotorilustracio.png" alt="Exemple de rotor" width="400"/>
@@ -141,7 +141,7 @@ Es l'arxiu que, tal i com diu el seu nom conté el missatge *xifrat*: es a dir n
 ### Desxifrat.txt
 
 ```
-En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge -ja desencriptat-, es presnta d'una forma concreta:
+En aquest arxiu, i per tal de simular la màquina exnigma original, el missatge -ja desxifrat-, es presnta d'una forma concreta:
 
 - Totes les lletres foren majuscules o minuscules, apsen a ser majuscules.
 
