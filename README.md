@@ -49,7 +49,7 @@ El menú del programa és aquest i ofereix diverses opcions:
 Aquesta opció xifra el missatge que introduïm per terminal. El contingut es xifra utilitzant la lògica dels tres rotors. Cada rotor és un `.txt` amb l’abecedari desordenat. El codi assigna una posició inicial a cada rotor segons el notch.
 
 <p align="center">
-  <img src="/encriptarfoto.png" alt="Xifrant el missatge" width="500"/>
+  <img src="/xifrarfoto.png" alt="Xifrant el missatge" width="500"/>
 </p>
 
 Per exemple, si la posició inicial dels rotors és `"GAT"`, el programa fa un bucle per trobar la lletra inicial en cada rotor. Suposem que tenim un rotor com aquest:
@@ -72,7 +72,7 @@ El programa anirà saltant lletres fins a trobar la indicada. Quan els tres roto
 Per desxifrar el missatge, cal utilitzar el mateix **notch**. El procés és l’invers: desfà les operacions realitzades durant la xifra. Com que els rotors són els mateixos i tenen la posició inicial coneguda, el missatge es pot recuperar correctament. El resultat es guarda a `Desxifrat.txt`.
 
 <p align="center">
-  <img src="/desencriptarfoto.png" alt="Desxifrant el missatge" width="500"/>
+  <img src="/desxifrarfoto.png" alt="Desxifrant el missatge" width="500"/>
 </p>
 
 [▲ Tornar a l'índex](#índex).
@@ -84,7 +84,7 @@ Per desxifrar el missatge, cal utilitzar el mateix **notch**. El procés és l�
 Per veure el missatge desxifrat, només cal obrir el fitxer `Desxifrat.txt`. Com es pot veure, el text es mostra en **grups de 5 lletres** i en **majúscules**. Això és perquè el programa aplica un filtre que elimina accents, espais i minúscules, convertint tot a majúscules abans de dividir-ho.
 
 <p align="center">
-  <img src="/desencriptartxt.png" alt="Missatge desxifrat" width="500"/>
+  <img src="/desxifrartxt.png" alt="Missatge desxifrat" width="500"/>
 </p>
 
 [▲ Tornar a l'índex](#índex).
